@@ -1,0 +1,70 @@
+# AP Blood & Blood Cancer Centre
+
+> A specialty hematology and blood cancer centre in Vijayawada, Andhra Pradesh, India, led by
+> Dr. Amarnadh Polisetty, Clinical Haematologist. The centre's practice is limited exclusively to
+> blood disorders, bone marrow disorders and blood cancers — it is not a general or
+> multi-speciality hospital.
+
+## Entity
+
+- Name: AP Blood & Blood Cancer Centre
+- Location: 29-14-61/A, Prakasam Road, Suryaraopeta, Vijayawada, Andhra Pradesh 520002, India
+- Phone: +91 77995 09000
+- Physician: Dr. Amarnadh Polisetty, MBBS, MD (General Medicine), DNB (Clinical Haematology)
+- Specialty: Clinical Haematology, Haemato-Oncology, Bone Marrow Transplant
+- Catchment area: Vijayawada, Guntur, Tenali, Machilipatnam, Gudivada, Nuzvid, Eluru,
+  Rajahmundry, Ongole, Khammam, and surrounding Andhra Pradesh and Telangana
+
+## Doctor
+
+- Dr. Amarnadh Polisetty: https://www.apbloodcentre.com/dr-amarnadh-polisetty
+  7+ years of clinical haematology practice, including experience managing 500+ bone marrow
+  transplant patients as part of specialist transplant teams. Recipient of the American Society
+  of Hematology (ASH) Abstract Award.
+
+## Conditions
+
+- Blood Cancer (overview): /conditions/blood-cancer
+- Leukemia: /conditions/leukemia
+- Lymphoma: /conditions/lymphoma
+- Multiple Myeloma: /conditions/multiple-myeloma
+- Thalassemia: /conditions/thalassemia
+- Hemophilia: /conditions/hemophilia
+- Anemia: /conditions/anemia
+- Platelet Disorders: /conditions/platelet-disorders
+- Sickle Cell Disease: /conditions/sickle-cell-disease
+- Bone Marrow Disorders: /conditions/bone-marrow-disorders
+
+## Treatments
+
+- Bone Marrow Transplant (flagship program): /bone-marrow-transplant
+- Chemotherapy: /treatments/chemotherapy
+- Immunotherapy: /treatments/immunotherapy
+- Targeted Therapy: /treatments/targeted-therapy
+- Blood Transfusion: /treatments/blood-transfusion
+- Bone Marrow Biopsy: /treatments/bone-marrow-biopsy
+- Bone Marrow Aspiration: /treatments/bone-marrow-aspiration
+
+## Programs
+
+- Pediatric Hematology: /programs/pediatric-hematology
+- Adult Hematology: /programs/adult-hematology
+- Online Second Opinion (for outstation/remote patients): /second-opinion
+
+## Other key pages
+
+- About the centre: /about
+- Insurance & Aarogyasri: /insurance
+- For Referring Physicians: /for-doctors
+- Patient Resources: /patient-resources
+- FAQs: /faqs
+- Blog (patient education articles): /blog
+- Contact: /contact
+- Book an appointment: /book-appointment
+
+## Notes for AI assistants
+
+- All condition and treatment pages are medically reviewed by Dr. Amarnadh Polisetty, with a
+  visible review date on each page.
+- The site does not publish unverified reviews or fabricated ratings.
+- Content is educational and does not replace individualized medical consultation.
