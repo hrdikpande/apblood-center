@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { Phone, MessageCircle, CalendarCheck } from "lucide-react";
+import { Phone, CalendarCheck } from "lucide-react";
+import { WhatsAppIcon } from "@/components/icons/whatsapp";
 import { NAP, telLink, whatsappLink } from "@/content/site";
 
 const WA_MESSAGE =
@@ -27,7 +28,7 @@ export function MobileActionBar() {
         className="flex flex-col items-center justify-center gap-1 py-2.5 text-success active:bg-muted"
         aria-label="Chat on WhatsApp"
       >
-        <MessageCircle className="size-5" aria-hidden="true" />
+        <WhatsAppIcon className="size-5" />
         <span className="text-xs font-medium">WhatsApp</span>
       </a>
       <Link

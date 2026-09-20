@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Menu, Phone } from "lucide-react";
@@ -38,21 +39,24 @@ export function Header() {
           scrolled ? "h-16" : "h-20"
         )}
       >
-        <Link href="/" className="flex items-center gap-2.5 shrink-0">
-          <span className="flex size-9 items-center justify-center rounded-xl bg-brand text-white">
-            <svg viewBox="0 0 24 24" fill="none" className="size-5" aria-hidden="true">
-              <path
-                d="M12 2C12 2 5 10.5 5 15a7 7 0 0 0 14 0C19 10.5 12 2 12 2Z"
-                stroke="currentColor"
-                strokeWidth="1.8"
-                strokeLinejoin="round"
-              />
-            </svg>
-          </span>
-          <span className="hidden font-display text-lg font-semibold leading-tight text-text-dark sm:block">
-            AP Blood &amp; Blood
-            <br className="hidden 2xl:block" /> Cancer Centre
-          </span>
+        <Link href="/" aria-label={`${SITE.shortName} — home`} className="flex shrink-0 items-center">
+          {/* Mark alone on phones: the full lockup's wordmark is unreadable below ~140px. */}
+          <Image
+            src="/logo-mark.png"
+            alt=""
+            width={96}
+            height={96}
+            priority
+            className={cn("w-auto transition-[height] duration-300 sm:hidden", scrolled ? "h-9" : "h-11")}
+          />
+          <Image
+            src="/logo.jpeg"
+            alt={SITE.name}
+            width={330}
+            height={120}
+            priority
+            className={cn("hidden w-auto transition-[height] duration-300 sm:block", scrolled ? "h-10" : "h-12")}
+          />
         </Link>
 
         <nav aria-label="Primary" className="hidden items-center gap-6 2xl:flex">

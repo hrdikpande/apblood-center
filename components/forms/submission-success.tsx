@@ -1,4 +1,5 @@
-import { CheckCircle2, MessageCircle, Phone } from "lucide-react";
+import { CheckCircle2, Phone } from "lucide-react";
+import { WhatsAppIcon } from "@/components/icons/whatsapp";
 import { buttonVariants } from "@/components/ui/button";
 import { NAP, telLink, whatsappLink } from "@/content/site";
 import { cn } from "@/lib/utils";
@@ -24,7 +25,7 @@ export function SubmissionSuccess({
           rel="noopener noreferrer"
           className={cn(buttonVariants({ size: "lg" }), "h-11 gap-2 rounded-full bg-success px-5 hover:bg-success/90")}
         >
-          <MessageCircle className="size-4" aria-hidden="true" />
+          <WhatsAppIcon className="size-4" />
           Continue on WhatsApp
         </a>
         <a

@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { MessageCircle, CalendarCheck } from "lucide-react";
+import { CalendarCheck } from "lucide-react";
+import { WhatsAppIcon } from "@/components/icons/whatsapp";
 import { whatsappLink } from "@/content/site";
 
 const WA_MESSAGE =
@@ -16,7 +17,7 @@ export function FloatingButtons() {
         aria-label="Chat on WhatsApp"
         className="flex size-12 items-center justify-center rounded-full bg-success text-white shadow-lg transition-transform hover:scale-105"
       >
-        <MessageCircle className="size-6" aria-hidden="true" />
+        <WhatsAppIcon className="size-6" />
       </a>
       <Link
         href="/book-appointment"

@@ -13,6 +13,8 @@ export function medicalClinicSchema() {
     legalName: SITE.legalName,
     description: SITE.description,
     url: SITE.url,
+    logo: `${SITE.url}/logo.jpeg`,
+    image: `${SITE.url}/logo.jpeg`,
     telephone: NAP.phoneTel,
     email: NAP.email,
     address: {

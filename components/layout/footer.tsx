@@ -1,5 +1,7 @@
+import Image from "next/image";
 import Link from "next/link";
-import { Phone, MessageCircle, MapPin, Mail } from "lucide-react";
+import { Phone, MapPin, Mail } from "lucide-react";
+import { WhatsAppIcon } from "@/components/icons/whatsapp";
 import { NAP, SITE, FOOTER_LINKS, telLink, whatsappLink } from "@/content/site";
 import { conditions } from "@/content/conditions";
 import { treatments } from "@/content/treatments";
@@ -11,20 +13,14 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-5">
           <div className="lg:col-span-2">
-            <Link href="/" className="flex items-center gap-2.5">
-              <span className="flex size-9 items-center justify-center rounded-xl bg-brand text-white">
-                <svg viewBox="0 0 24 24" fill="none" className="size-5" aria-hidden="true">
-                  <path
-                    d="M12 2C12 2 5 10.5 5 15a7 7 0 0 0 14 0C19 10.5 12 2 12 2Z"
-                    stroke="currentColor"
-                    strokeWidth="1.8"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </span>
-              <span className="font-display text-lg font-semibold text-text-dark">
-                {SITE.shortName}
-              </span>
+            <Link href="/" aria-label={`${SITE.shortName} — home`} className="inline-flex items-center">
+              <Image
+                src="/logo.jpeg"
+                alt={SITE.name}
+                width={330}
+                height={120}
+                className="h-12 w-auto"
+              />
             </Link>
             <p className="mt-4 max-w-sm text-sm text-text-light">{SITE.description}</p>
 
@@ -38,7 +34,7 @@ export function Footer() {
                 {NAP.phoneDisplay}
               </a>
               <a href={whatsappLink("Hello, I would like to know more about AP Blood & Blood Cancer Centre.")} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2.5 text-text-light hover:text-brand">
-                <MessageCircle className="size-4 shrink-0" aria-hidden="true" />
+                <WhatsAppIcon className="size-4 shrink-0" />
                 WhatsApp {NAP.phoneDisplay}
               </a>
               <a href={`mailto:${NAP.email}`} className="flex items-center gap-2.5 text-text-light hover:text-brand">

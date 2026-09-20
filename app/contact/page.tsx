@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { MapPin, Phone, Mail, MessageCircle, Clock, Navigation } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Navigation } from "lucide-react";
+import { WhatsAppIcon } from "@/components/icons/whatsapp";
 import { Breadcrumbs } from "@/components/shared/breadcrumbs";
 import { Reveal } from "@/components/motion/reveal";
 import { buttonVariants } from "@/components/ui/button";
@@ -59,7 +60,7 @@ export default function ContactPage() {
           </div>
 
           <div className="flex items-start gap-3 rounded-2xl border border-border bg-white p-5">
-            <MessageCircle className="mt-0.5 size-5 shrink-0 text-brand" aria-hidden="true" />
+            <WhatsAppIcon className="mt-0.5 size-5 shrink-0 text-success" />
             <div>
               <h2 className="text-sm font-semibold text-text-dark">WhatsApp</h2>
               <a

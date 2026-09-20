@@ -1,4 +1,5 @@
 import { ImageResponse } from "next/og";
+import { logoDataUri } from "@/lib/og-logo";
 
 export const alt = "Bone Marrow Transplant | AP Blood & Blood Cancer Centre";
 export const size = { width: 1200, height: 630 };
@@ -19,11 +20,16 @@ export default function Image() {
           fontFamily: "sans-serif",
         }}
       >
-        <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
-          <div style={{ width: 52, height: 52, borderRadius: 16, background: "#B91C1C", display: "flex" }} />
-          <div style={{ fontSize: 26, fontWeight: 700, color: "#111827" }}>
-            AP Blood &amp; Blood Cancer Centre
-          </div>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            background: "#ffffff",
+            borderRadius: 20,
+            padding: "16px 24px",
+          }}
+        >
+          <img src={logoDataUri} alt="" width={385} height={140} />
         </div>
         <div style={{ display: "flex", flexDirection: "column" }}>
           <div style={{ fontSize: 22, fontWeight: 600, color: "#B91C1C", marginBottom: 12 }}>

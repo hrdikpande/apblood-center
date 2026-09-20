@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { Phone, MessageCircle, CalendarCheck } from "lucide-react";
+import { Phone, CalendarCheck } from "lucide-react";
+import { WhatsAppIcon } from "@/components/icons/whatsapp";
 import { buttonVariants } from "@/components/ui/button";
 import { Reveal } from "@/components/motion/reveal";
 import { NAP, telLink, whatsappLink } from "@/content/site";
@@ -58,7 +59,7 @@ export function CtaBand({
                 "h-12 gap-2 rounded-full border-white/40 bg-transparent px-6 text-base text-white hover:bg-white/10"
               )}
             >
-              <MessageCircle className="size-5" aria-hidden="true" />
+              <WhatsAppIcon className="size-5" />
               WhatsApp Us
             </a>
           </div>
