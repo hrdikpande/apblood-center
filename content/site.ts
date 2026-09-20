@@ -53,6 +53,21 @@ export const DOCTOR = {
   credentials: "MBBS, MD (General Medicine), DNB (Clinical Haematology)",
   credentialsShort: "MD, DNB (Clinical Haematology)",
   title: "Clinical Haematologist & Haemato-Oncologist",
+  // Portraits live in /public. `photo` is the primary profile picture used on the
+  // homepage intro and the doctor profile page; `photoConsult` is the secondary
+  // consultation-room portrait. Both are referenced in Physician schema.
+  photo: {
+    src: "/1.jpeg",
+    width: 1200,
+    height: 1600,
+    alt: "Dr. Amarnadh Polisetty, clinical haematologist and haemato-oncologist, Vijayawada",
+  },
+  photoConsult: {
+    src: "/2.jpeg",
+    width: 1433,
+    height: 1600,
+    alt: "Dr. Amarnadh Polisetty in consultation at AP Blood & Blood Cancer Centre, Vijayawada",
+  },
   specialization: "Clinical Haematology, Haemato-Oncology, Bone Marrow Transplant",
   experienceYears: 7,
   bio: [

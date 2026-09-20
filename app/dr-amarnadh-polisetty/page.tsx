@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { GraduationCap, Award, Stethoscope } from "lucide-react";
 import { Breadcrumbs } from "@/components/shared/breadcrumbs";
 import { SectionHeading } from "@/components/shared/section-heading";
@@ -21,13 +22,24 @@ export default function DoctorProfilePage() {
 
         <div className="mt-8 grid grid-cols-1 items-start gap-10 lg:grid-cols-[320px_1fr]">
           <Reveal>
-            <div className="relative flex aspect-[4/5] flex-col items-center justify-center gap-4 overflow-hidden rounded-3xl border border-border bg-gradient-to-br from-rose/50 via-white to-rose/10 p-6 text-center">
+            <div className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-border bg-gradient-to-br from-rose/50 via-white to-rose/10">
               <div aria-hidden="true" className="animate-cell-a absolute -top-10 -right-10 size-44 rounded-full bg-rose/60 blur-3xl" />
               <div aria-hidden="true" className="animate-cell-c absolute -bottom-12 -left-10 size-48 rounded-full bg-brand/10 blur-3xl" />
-              <span className="relative flex size-24 items-center justify-center rounded-full border-2 border-brand/25 bg-white/80 font-display text-3xl font-bold text-brand backdrop-blur-sm">
-                AP
-              </span>
-              <p className="relative text-xs text-text-light">{DOCTOR.credentialsShort}</p>
+              <Image
+                src={DOCTOR.photoConsult.src}
+                alt={DOCTOR.photoConsult.alt}
+                fill
+                priority
+                sizes="(max-width: 1024px) 100vw, 320px"
+                className="object-cover object-top"
+              />
+              <div
+                aria-hidden="true"
+                className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-text-dark/75 to-transparent"
+              />
+              <p className="absolute inset-x-0 bottom-0 p-4 text-center text-xs text-white/85">
+                {DOCTOR.credentialsShort}
+              </p>
             </div>
             <div className="mt-5 rounded-2xl border border-border bg-white p-5">
               <h2 className="text-sm font-semibold text-text-dark">Education</h2>

@@ -1,8 +1,8 @@
+import Image from "next/image";
 import Link from "next/link";
 import { CalendarCheck, Phone, Award } from "lucide-react";
 import { buttonVariants } from "@/components/ui/button";
 import { CellFlowBackground } from "@/components/motion/cell-flow-background";
-import { DnaHelix } from "@/components/motion/dna-helix";
 import { CountUp } from "@/components/motion/count-up";
 import { NAP, STATS, DOCTOR, telLink } from "@/content/site";
 import { cn } from "@/lib/utils";
@@ -68,8 +68,21 @@ export function Hero() {
           <div className="relative aspect-[4/5] w-full max-w-sm overflow-hidden rounded-3xl border border-border bg-gradient-to-br from-rose/60 via-white to-rose/20 shadow-sm">
             <div aria-hidden="true" className="animate-cell-a absolute -top-14 -right-10 size-52 rounded-full bg-rose/70 blur-3xl" />
             <div aria-hidden="true" className="animate-cell-b absolute -bottom-16 -left-12 size-56 rounded-full bg-brand/10 blur-3xl" />
-            <div className="relative flex h-full items-center justify-center">
-              <DnaHelix className="h-72 w-14 text-brand" />
+            <Image
+              src={DOCTOR.photo.src}
+              alt={DOCTOR.photo.alt}
+              fill
+              priority
+              sizes="384px"
+              className="object-cover object-top"
+            />
+            <div
+              aria-hidden="true"
+              className="absolute inset-x-0 bottom-0 h-44 bg-gradient-to-t from-text-dark/80 via-text-dark/25 to-transparent"
+            />
+            <div className="absolute inset-x-0 bottom-0 p-6">
+              <p className="font-display text-lg font-semibold text-white">{DOCTOR.name}</p>
+              <p className="mt-0.5 text-xs text-white/80">{DOCTOR.credentialsShort}</p>
             </div>
           </div>
           <div className="absolute -left-6 bottom-8 flex items-center gap-2.5 rounded-2xl border border-border bg-white p-4 shadow-md">

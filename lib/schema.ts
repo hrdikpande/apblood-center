@@ -54,6 +54,7 @@ export function physicianSchema() {
     jobTitle: DOCTOR.title,
     description: DOCTOR.bio[0],
     medicalSpecialty: ["Hematology", "Oncology"],
+    image: [`${SITE.url}${DOCTOR.photo.src}`, `${SITE.url}${DOCTOR.photoConsult.src}`],
     worksFor: { "@id": CLINIC_ID },
     hasCredential: DOCTOR.education.map((e) => ({
       "@type": "EducationalOccupationalCredential",
